@@ -189,7 +189,7 @@ ul,li{
 	line-height:24px;
 	text-transform:uppercase;
 	background:none;
-	color:#f71010 !important;
+	color:orange !important;
 	font-size:14px;
 	border:2px solid #f60707 !important;
 	font-family: 'Raleway', sans-serif;
@@ -922,8 +922,8 @@ section > .container-fluid {
 	top:6px;
 	width:34px;
 	height:30px;
-	border:1px solid #ffffff;
-	background:url(../submenu-icon.html) center center no-repeat;
+	border:1px solid 	#f7f7f7;
+	background: url(icons8-menu-50.png) center center no-repeat;
 	background-size:20px;
 	cursor:pointer;
 	z-index:5;
@@ -1128,7 +1128,7 @@ section > .container-fluid {
 
 .main-slider h2{
 	font-size:48px;
-	color:#f80000;
+	color:orange;
 	font-weight:700;
 }
 

@@ -1,3 +1,5 @@
+
+
 @media only screen and (max-width: 1300px){
 	.main-footer .contact-widget .social-links{
 		position:relative;
@@ -142,19 +144,19 @@
 	.main-menu .navbar-header .navbar-toggle{
 		display:block;
 		z-index:7;
-		border:1px solid #e92424;
+		border:1px solid orange;
 		margin:0px 0px 0px 0px;
 	}
 	
 	.main-menu .navbar-header .navbar-toggle .icon-bar{
-		background:#e92424;	
+		background: orange;	
 	}
 	
 	.main-menu .navbar-collapse > .navigation{
 		float:none !important;
 		margin:0px;
 		width:100%;
-		background:#e92424;
+		background: orange;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li{
@@ -191,7 +193,7 @@
 		right:auto !important;
 		top:auto !important;
 		width:100%;
-		background:#e92424;
+		background: orange;
 		border-radius:0px;
 		-webkit-border-radius:0px;
 		-ms-border-radius:0px;
@@ -225,14 +227,14 @@
 		padding:10px 10px !important;
 		line-height:22px;
 		color:#ffffff;
-		background:#e92424;
+		background: orange;
 		text-align:left;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li > a:hover,
 	.main-menu .navbar-collapse > .navigation > li > a:active,
 	.main-menu .navbar-collapse > .navigation > li > a:focus{
-		background:#e92424;
+		background: orange;
 	}
 	
 	.main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{
