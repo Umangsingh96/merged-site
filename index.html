@@ -18,6 +18,9 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <style>
+
+
+
         .for-button {
             width: 85%;
             margin: auto;
@@ -134,7 +137,7 @@
                     <div class="outer-box">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img class="img-responsive" src="assets/logo.jpeg"
+                            <a href="index.html"><img class="img-responsive" src="assets/logo2.jpeg"
                                     style="width:100px;"></a>
                         </div>
                         <!-- Main Menu -->
@@ -296,7 +299,7 @@
                     </div>
                 </div>
                 <!--Slide Item-->
-                <div class="item window-size" data-bg-img="assets/135.jpg">
+                <div class="item window-size" data-bg-img="assets/21.jpeg">
                     <div class="auto-container">
                         <div class="box-inner">
                             <div class="big-title">
@@ -310,7 +313,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item window-size" data-bg-img="assets/136.jpg">
+                <div class="item window-size" data-bg-img="assets/137.jpg">
                     <div class="auto-container">
                         <div class="box-inner">
                             <div class="big-title">
@@ -340,6 +343,8 @@
                 opacity: 0;
             }
         }
+
+        
     </style>
 
 
@@ -874,8 +879,9 @@
                         <div class="line-center"></div>
                     </div>
                     <div class="form wow fadeInRight mt-60" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <form id="form1" name="form1" method="post" action="#"
-                            onsubmit="return validateHorizontalJsForm(this)">
+                      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                                <!-- Required Web3Forms Access Key -->
+                                <input type="hidden" name="access_key" value="6300209f-80cf-4b90-9800-120aa0264b62">
                             <div class="row clearfix">
                                 <div class="col-md-6 col-sm-6 col-xs-12 form-group">
                                     <input type="text" name="Name" value="" placeholder="Name *" required="">
@@ -907,6 +913,52 @@
                                 <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 form-group text-center">
                                     <button type="submit" class="theme-btn normal-btn">Confirm Booking</button>
                                 </div>
+
+                                  <script language="JavaScript" type="text/javascript">
+
+
+                                document.querySelector(".contact-form").addEventListener("submit", async function (e) {
+                                    e.preventDefault();
+                                    const form = e.target;
+                                    const formData = new FormData(form);
+
+                                    const response = await fetch(form.action, {
+                                        method: form.method,
+                                        body: formData,
+                                        headers: { 'Accept': 'application/json' }
+                                    });
+
+                                    if (response.ok) {
+                                        alert("✅ Your message has been sent successfully!");
+                                        form.reset();
+                                    } else {
+                                        alert("❌ There was an error sending your message. Please try again.");
+                                    }
+                                });
+
+                                //You should create the validator only after the definition of the HTML form
+                                var frmvalidator = new Validator("form1");
+
+
+
+
+
+                                frmvalidator.addValidation("Requirements", "maxlen=500");
+                                frmvalidator.addValidation("Requirements", "req");
+                                frmvalidator.addValidation("Requirements", "Requirements");
+
+                                frmvalidator.addValidation("Name", "req", "Please enter your First Name");
+
+                                frmvalidator.addValidation("Email", "maxlen=100");
+                                frmvalidator.addValidation("Email", "req");
+                                frmvalidator.addValidation("Email", "Email");
+
+
+                                frmvalidator.addValidation("Phone", "req", "Please enter the Phone no.");
+                                frmvalidator.addValidation("Phone", "maxlen=50");
+                                frmvalidator.addValidation("Phone", "numeric");
+
+                            </script>
                             </div>
                         </form>
                     </div>
